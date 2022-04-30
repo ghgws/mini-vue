@@ -20,13 +20,24 @@ var vm = new Vue({
       info: {
         grade: 3,
         rank: {
-          math: 1,
-          english: 2,
-          computer: 1
-        }
+          math: {
+            num: 99,
+            rank: 1
+          },
+          english: {
+            num: 90,
+            rank: 3
+          },
+          computer: {
+            num: 96,
+            rank: 1
+          },
+        },
       }
     }
   }
 })
-
+console.log(vm);
 console.log(vm.title);
+console.log(vm.teachers);
+vm.teachers.push("wangwu")
